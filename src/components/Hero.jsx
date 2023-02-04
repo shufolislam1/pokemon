@@ -7,7 +7,7 @@ const Hero = () => {
                 <img style={{ marginTop: 50, marginLeft: 150 }} src="https://i.ibb.co/sqX7Qc2/Logo.png" alt="pokemon" srcSet="" />
             </div>
             <div className='relative overflow-hidden bg-no-repeat bg-cover '>
-                <div className="card w-96 bg-base-100 shadow-xl max-w-xs hover:scale-110 transition duration-300 ease-in-out">
+                <div className="card w-96 bg-base-100 hover:bg-blue-400 shadow-xl max-w-xs hover:scale-110 transition duration-300 ease-in-out">
                     <figure className="px-10 pt-10">
                         <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
                     </figure>
