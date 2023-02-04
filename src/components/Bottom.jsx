@@ -2,34 +2,25 @@ import React from 'react';
 
 const Bottom = () => {
     return (
-        <div className='my-10 flex'>
+        <div className='flex'  style={{width: 1800}}>
             <div>
-                <div className="drawer drawer-mobile">
-                    <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                    {/* <div className="drawer-content flex flex-col items-center justify-center">
-                        <!-- Page content here -->
-                        <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-
-                    </div> */}
-                    <div className="">
-                        <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                        <ul className="p-4 w-80 bg-base-100 text-base-content">
-                            {/* <!-- Sidebar content here -->
-                            <li><a>Sidebar Item 1</a></li>
-                            <li><a>Sidebar Item 2</a></li> */}
+                <div>
+                    <div>
+                        <ul className="w-40 bg-base-100">
                             <img src="https://i.ibb.co/3p524zX/Left.png" alt="sidebar" srcSet="" />
                         </ul>
-
                     </div>
                 </div>
-                {/* <img src="https://i.ibb.co/3p524zX/Left.png" alt="sidebar" srcSet="" /> */}
             </div>
-            <div>
-                <div style={{ backgroundImage: `url(https://i.ibb.co/n6Gxyhh/Brush.png)`, backgroundRepeat: 'no-repeat', marginLeft: 600 }}>
-                    <h1 className='text-blue-500 font-sans-serif font-bold text-5xl'>Ash & Pikachu Arrive in</h1>
-                    <h1 className='text-blue-500 font-serif font-bold text-5xl'>Pokémon Universe</h1>
+            <div className='mt-10'>
+                <div className="bg-[url('https://i.ibb.co/n6Gxyhh/Brush.png')] bg-no-repeat bg-center" >
+                {/* <div style={{ backgroundImage: `url(https://i.ibb.co/n6Gxyhh/Brush.png)`, backgroundRepeat: 'no-repeat', marginLeft: 60 }}> */}
+                <div className='text-blue-500 font-sans-serif font-bold text-5xl'>
+                    <h1>Ash & Pikachu Arrive in</h1>
+                    <h1>Pokémon Universe</h1>
                 </div>
-                <div className='grid justify-center mx-auto grid-cols-2 gap-10 '>
+                </div>
+                <div className='grid justify-center mx-auto grid-cols-2 gap-10 mt-10'>
                     <div className='text-start'>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ab. Hic aut error nostrum consequuntur facilis praesentium, rem itaque. Cupiditate officia iure, qui magnam esse adipisci necessitatibus blanditiis tempora velit, beatae ea sequi illum aut quo maxime minima repellendus dolore nostrum excepturi provident. Beatae aliquam officia fugiat maxime quod quisquam delectus ad, adipisci, deleniti non sint quasi voluptatum quas explicabo aspernatur repellat atque, dicta quidem totam. Sequi molestiae, maiores voluptate officiis natus animi, dignissimos quisquam necessitatibus consectetur nemo accusantium asperiores, quasi autem iure hic. Ullam consequuntur placeat eligendi sequi. Quis dolores sapiente quod quisquam tenetur asperiores aut illo explicabo tempore?</p>
                         <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis vel doloremque quaerat delectus error tempore at, accusantium id nesciunt sunt eaque dolores iste blanditiis voluptatem odit qui? Molestias quo cum placeat officia repudiandae ex officiis, quibusdam, sed est beatae laudantium rerum cumque minus aut consectetur! Accusamus ab ad commodi impedit error corporis beatae reprehenderit eaque possimus, culpa odit. Cumque quisquam ratione beatae suscipit doloribus fugit aperiam aspernatur facere, soluta consequuntur quibusdam voluptate dolorum harum porro placeat. Obcaecati cum magni dolore vitae placeat, culpa suscipit sed quisquam at modi magnam libero alias est natus ex quam dolores odit dolor doloribus.</p>
@@ -45,25 +36,13 @@ const Bottom = () => {
                 </div>
             </div>
             <div>
-                <div className="drawer drawer-mobile">
-                    <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-                    {/* <div className="drawer-content flex flex-col items-center justify-center">
-                        <!-- Page content here -->
-                        <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-
-                    </div> */}
-                    <div className="">
-                        <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-                        <ul className="p-4 w-80 bg-base-100 text-base-content">
-                            {/* <!-- Sidebar content here -->
-                            <li><a>Sidebar Item 1</a></li>
-                            <li><a>Sidebar Item 2</a></li> */}
+                <div>
+                    <div>
+                        <ul className="w-40 ml-10 bg-base-100">
                             <img src="https://i.ibb.co/3p524zX/Left.png" alt="sidebar" srcSet="" />
                         </ul>
-
                     </div>
                 </div>
-                {/* <img src="https://i.ibb.co/3p524zX/Left.png" alt="sidebar" srcSet="" /> */}
             </div>
         </div>
     );
