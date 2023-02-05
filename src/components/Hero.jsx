@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import InfoCards from "./InfoCards";
 
+// ******In this component, data loaded via Graphql API and passed them through props to InfoCards compoennts. Beside, design part of Hero/top is in this component*********
+
 const Hero = () => {
   const [data, setData] = useState([]);
   const gqlQuery = `query pokemons($limit: Int) {
@@ -49,7 +51,7 @@ const Hero = () => {
           srcSet=""
         />
       </div>
-      <div className="grid grid-cols-5 gap-10  mt-10">
+      <div className="grid grid-cols-5 gap-10 mt-10 max-w-screen-2xl mx-auto">
         {data?.map((oneData, index) => (
           <InfoCards key={index} oneData={oneData}></InfoCards>
         ))}
