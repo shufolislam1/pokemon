@@ -35,6 +35,8 @@ const Hero = () => {
     .then((res) => setData(res?.data?.pokemons?.results));
   // .then((res) => console.log(res));
 
+
+  
   return (
     <div
       style={{
@@ -51,9 +53,11 @@ const Hero = () => {
           srcSet=""
         />
       </div>
-      <div className="grid grid-cols-5 gap-10 mt-10 max-w-screen-2xl mx-auto">
+      <div className="grid lg:grid-cols-5 sm:grid-cols-1  gap-10 mt-10 max-w-screen-2xl mx-auto">
         {data?.map((oneData, index) => (
+          // <div className="col-span-1">
           <InfoCards key={index} oneData={oneData}></InfoCards>
+          // </div>
         ))}
       </div>
     </div>

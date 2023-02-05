@@ -7,7 +7,7 @@ const Bottom = () => {
       <div>
         <div>
           <div>
-            <ul className="w-40 bg-base-100">
+            <ul className="w-40 bg-base-100 hidden lg:block">
               <img
                 src="https://i.ibb.co/3p524zX/Left.png"
                 alt="sidebar"
@@ -24,9 +24,9 @@ const Bottom = () => {
             <h1 className="font-bold">Pokémon Universe</h1>
           </div>
         </div>
-        <div className="flex gap-5 mt-10 font-semibold text-sm">
+        <div className="flex lg:flex-row flex-col gap-5 mt-10 font-semibold text-sm">
           <div className="text-justify">
-            <div className="flex items-center justify-center gap-x-5">
+            <div className="flex lg:flex-row flex-col items-center justify-center gap-x-5">
               <div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -40,7 +40,7 @@ const Bottom = () => {
                   aperiam eaque. Ad fuga nulla blanditiis quos aperiam.
                 </p>
                 <div className="flex items-center gap-x-5">
-                  <p className="my-2">
+                  <p className="my-2 hidden lg:block">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi facilis vel doloremque quaerat delectus error tempore
                     at, accusantium id nesciunt sunt eaque dolores iste
@@ -51,13 +51,13 @@ const Bottom = () => {
                     odio!
                   </p>
                   <img
-                    className="h-full w-full my-3"
+                    className="lg:h-full lg:w-full my-3 sm:self-center"
                     src="https://i.ibb.co/FzTVjpV/Image04.png"
                     alt="image4"
                     srcSet=""
                   />
                 </div>
-                <p>
+                <p className="hidden lg:block">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Rerum, harum error voluptates laboriosam corrupti sapiente
                   fuga ea assumenda. Consectetur, repellendus aliquid? Ducimus
@@ -69,7 +69,7 @@ const Bottom = () => {
                   consectetur aspernatur quidem similique.
                 </p>
               </div>
-              <div className="h-full w-full">
+              <div className="lg:h-full lg:w-full">
                 <img
                   className="mb-5"
                   src="https://i.ibb.co/KswhPJ8/Image03.png"
@@ -83,7 +83,7 @@ const Bottom = () => {
                 />
               </div>
             </div>
-            <p className="mt-2">
+            <p className="mt-2 hidden lg:block">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
               consequatur delectus assumenda incidunt ad odio recusandae ullam.
               Veniam reprehenderit voluptatem ab fugiat, eligendi, perspiciatis,
@@ -106,7 +106,7 @@ const Bottom = () => {
             </p>
           </div>
           <div className="text-justify">
-            <p>
+            <p className="hidden lg:block">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis, ab. Hic aut error nostrum consequuntur facilis
               praesentium, rem itaque. Cupiditate officia iure, qui magnam esse
@@ -117,12 +117,12 @@ const Bottom = () => {
             </p>
             <div className="flex gap-5 items-center">
               <img
-                className="h-full w-full my-2"
+                className="lg:h-full lg:w-full my-2"
                 src="https://i.ibb.co/GTkSwBc/Image05.png"
                 alt=""
                 srcSet=""
               />
-              <p className="my-5">
+              <p className="my-5 hidden lg:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
                 facilis vel doloremque quaerat delectus error tempore at,
                 accusantium id nesciunt sunt eaque dolores iste blanditiis
@@ -135,12 +135,12 @@ const Bottom = () => {
             </div>
             <div className="flex gap-5 items-center">
               <img
-                className="h-full w-full my-2"
+                className="lg:h-full lg:w-full my-2"
                 src="https://i.ibb.co/cQcKfvb/Image01.png"
                 alt=""
                 srcSet=""
               />
-              <p>
+              <p className="hidden lg:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
                 harum error voluptates laboriosam corrupti sapiente fuga ea
                 assumenda. Consectetur, repellendus aliquid? Ducimus esse nobis
@@ -168,7 +168,7 @@ const Bottom = () => {
         </div>
       </div>
       <div>
-        <ul className="w-40 ml-10 bg-base-100">
+        <ul className="w-40 ml-10 bg-base-100 hidden lg:block">
           <img
             src="https://i.ibb.co/3p524zX/Left.png"
             alt="sidebar"
