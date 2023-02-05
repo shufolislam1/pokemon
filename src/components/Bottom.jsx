@@ -28,7 +28,7 @@ const Bottom = () => {
           <div className="text-justify">
             <div className="flex lg:flex-row flex-col items-center justify-center gap-x-5">
               <div>
-                <p>
+                <p className="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perspiciatis, ab. Hic aut error nostrum consequuntur facilis
                   praesentium, rem itaque. Cupiditate officia iure, qui magnam
@@ -39,8 +39,47 @@ const Bottom = () => {
                   consectetur adipisicing elit. Excepturi magni ex distinctio
                   aperiam eaque. Ad fuga nulla blanditiis quos aperiam.
                 </p>
+                {/* this part is for mobile responsive and will apear only on mobile */}
+                <div className="flex justify-center lg:hidden">
+                  <div className="flex items-center">
+                    <div className="">
+                      <img
+                      
+                        src="https://i.ibb.co/FzTVjpV/Image04.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                    <div className="my-10 ml-7">
+                      <img
+                      className="mb-5"
+                        src="https://i.ibb.co/KswhPJ8/Image03.png"
+                        alt=""
+                        srcset=""
+                      />
+                      <img
+                        src="https://i.ibb.co/10vgL2s/Image02.png"
+                        alt=""
+                        srcset=""
+                      />
+                    </div>
+                  </div>
+                  <div className="mt-36 ml-7">
+                  <img
+                  className="mb-5"
+                    src="https://i.ibb.co/GTkSwBc/Image05.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <img
+                    src="https://i.ibb.co/cQcKfvb/Image01.png"
+                    alt=""
+                    srcset=""
+                  />
+                  </div>
+                </div>
                 <div className="flex items-center gap-x-5">
-                  <p className="my-2 hidden lg:block">
+                  <p className="my-2  hidden lg:block">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi facilis vel doloremque quaerat delectus error tempore
                     at, accusantium id nesciunt sunt eaque dolores iste
@@ -48,10 +87,10 @@ const Bottom = () => {
                     officia repudiandae ex officiis, quibusdam, sed est beatae
                     laudantium rerum cumque minus aut consectetur! Lorem ipsum
                     dolor sit amet consectetur, adipisicing elit. Accusantium,
-                    odio!
+                    odiosss!
                   </p>
                   <img
-                    className="lg:h-full lg:w-full my-3 sm:self-center"
+                    className="lg:h-full lg:w-full my-3  hidden lg:block"
                     src="https://i.ibb.co/FzTVjpV/Image04.png"
                     alt="image4"
                     srcSet=""
@@ -69,7 +108,7 @@ const Bottom = () => {
                   consectetur aspernatur quidem similique.
                 </p>
               </div>
-              <div className="lg:h-full lg:w-full">
+              <div className="lg:h-full lg:w-full hidden lg:block">
                 <img
                   className="mb-5"
                   src="https://i.ibb.co/KswhPJ8/Image03.png"
@@ -117,7 +156,7 @@ const Bottom = () => {
             </p>
             <div className="flex gap-5 items-center">
               <img
-                className="lg:h-full lg:w-full my-2"
+                className="lg:h-full lg:w-full my-2 hidden lg:block"
                 src="https://i.ibb.co/GTkSwBc/Image05.png"
                 alt=""
                 srcSet=""
@@ -135,7 +174,7 @@ const Bottom = () => {
             </div>
             <div className="flex gap-5 items-center">
               <img
-                className="lg:h-full lg:w-full my-2"
+                className="lg:h-full lg:w-full my-2 hidden lg:block"
                 src="https://i.ibb.co/cQcKfvb/Image01.png"
                 alt=""
                 srcSet=""
@@ -151,7 +190,7 @@ const Bottom = () => {
                 ipsum illum voluptate.
               </p>
             </div>
-            <p className="mt-5">
+            <p  className=" mt-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
               consequatur delectus assumenda incidunt ad odio recusandae ullam.
               Veniam reprehenderit voluptatem ab fugiat, eligendi, perspiciatis,
