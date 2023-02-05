@@ -14,9 +14,9 @@ const Bottom = () => {
             </div>
             <div className='mt-10'>
                 <div className="bg-[url('https://i.ibb.co/n6Gxyhh/Brush.png')] bg-no-repeat bg-center" >
-                    <div className='text-blue-500 font-sans-serif font-bold text-5xl'>
-                        <h1>Ash & Pikachu Arrive in</h1>
-                        <h1>Pokémon Universe</h1>
+                    <div className='text-blue-500 font-sans-serif text-5xl'>
+                        <h1 className='font-bold'>Ash & Pikachu Arrive in</h1>
+                        <h1 className='font-bold'>Pokémon Universe</h1>
                     </div>
                 </div>
                 <div className='flex gap-5 mt-10 font-semibold text-sm'>
@@ -26,7 +26,7 @@ const Bottom = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ab. Hic aut error nostrum consequuntur facilis praesentium, rem itaque. Cupiditate officia iure, qui magnam esse adipisci necessitatibus blanditiis tempora velit, beatae ea sequi illum aut quo maxime minima repellendus dolore nostrum excepturi provident. Beatae aliquam officia fugiat maxime quod quisquam delectus ad Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi magni ex distinctio aperiam eaque. Ad fuga nulla blanditiis quos aperiam.</p>
                             <div className='flex items-center gap-x-5'>
                                 <p className='my-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis vel doloremque quaerat delectus error tempore at, accusantium id nesciunt sunt eaque dolores iste blanditiis voluptatem odit qui? Molestias quo cum placeat officia repudiandae ex officiis, quibusdam, sed est beatae laudantium rerum cumque minus aut consectetur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, odio!</p>
-                                <img className='h-full w-full' src="https://i.ibb.co/FzTVjpV/Image04.png" alt="image4" srcSet="" />
+                                <img className='h-full w-full my-3' src="https://i.ibb.co/FzTVjpV/Image04.png" alt="image4" srcSet="" />
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, harum error voluptates laboriosam corrupti sapiente fuga ea assumenda. Consectetur, repellendus aliquid? Ducimus esse nobis placeat veritatis, itaque mollitia sapiente animi impedit perspiciatis labore, tenetur beatae magnam nihil nostrum alias ipsum ipsa soluta aperiam suscipit? Beatae, aliquam ex Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, vitae porro? Neque quaerat minima suscipit ad consectetur aspernatur quidem similique.</p>
                             </div>
