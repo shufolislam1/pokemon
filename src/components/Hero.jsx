@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import InfoCards from "./InfoCards";
 import { useMediaQuery } from 'react-responsive';
 import Carousel from "./Carousel";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 
 // ******In this component, data loaded via Graphql API and passed them through props to InfoCards compoennts. Beside, design part of Hero/top is in this component*********
 
 const Hero = () => {
+
+
   const isLargeScreen = useMediaQuery({ minWidth: 768 });
+  useEffect(() => {
+    console.log(isLargeScreen);
+  },[isLargeScreen])
 
   const [data, setData] = useState([]);
   const gqlQuery = `query pokemons($limit: Int) {
@@ -41,7 +50,7 @@ const Hero = () => {
   // .then((res) => console.log(res));
 
 
-  
+
   return (
     <div
       style={{
@@ -58,15 +67,23 @@ const Hero = () => {
           srcSet=""
         />
       </div>
-      <div className="grid lg:grid-cols-5 sm:grid-cols-1 gap-10 mt-10 max-w-screen-2xl mx-auto">
+      <div className="lg:grid lg:grid-cols-5 lg:gap-10 lg:mt-10 lg:max-w-screen-2xl lg:mx-auto">
         {data?.map((oneData, index) => (
           // <div className="col-span-1">
-          isLargeScreen?
+          // isLargeScreen?
+          // <InfoCards key={index} oneData={oneData}></InfoCards>
+          // :<Carousel key={index} oneData={oneData}></Carousel>
           <InfoCards key={index} oneData={oneData}></InfoCards>
-          :<Carousel key={index} oneData={oneData}></Carousel>
           // </div>
         ))}
       </div>
+      {
+        !isLargeScreen && <Swiper >
+          {data?.map((oneData, index) => (
+            <SwiperSlide><InfoCards key={index} oneData={oneData}></InfoCards></SwiperSlide>
+          ))}
+        </Swiper>
+      }
     </div>
   );
 };
