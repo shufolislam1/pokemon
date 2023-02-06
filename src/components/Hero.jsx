@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import InfoCards from "./InfoCards";
+import { useMediaQuery } from 'react-responsive';
+import Carousel from "./Carousel";
+
 
 // ******In this component, data loaded via Graphql API and passed them through props to InfoCards compoennts. Beside, design part of Hero/top is in this component*********
 
 const Hero = () => {
+  const isLargeScreen = useMediaQuery({ minWidth: 768 });
+
   const [data, setData] = useState([]);
   const gqlQuery = `query pokemons($limit: Int) {
         pokemons(limit: $limit) {
@@ -53,10 +58,12 @@ const Hero = () => {
           srcSet=""
         />
       </div>
-      <div className="grid lg:grid-cols-5 sm:grid-cols-1  gap-10 mt-10 max-w-screen-2xl mx-auto">
+      <div className="grid lg:grid-cols-5 sm:grid-cols-1 gap-10 mt-10 max-w-screen-2xl mx-auto">
         {data?.map((oneData, index) => (
           // <div className="col-span-1">
+          isLargeScreen?
           <InfoCards key={index} oneData={oneData}></InfoCards>
+          :<Carousel key={index} oneData={oneData}></Carousel>
           // </div>
         ))}
       </div>
