@@ -3,7 +3,7 @@ import React from "react";
 
 const Bottom = () => {
   return (
-    <div className="flex" style={{ width: 1800 }}>
+    <div className="flex" >
       <div>
         <div>
           <div>
@@ -24,11 +24,12 @@ const Bottom = () => {
             <h1 className="font-bold">Pokémon Universe</h1>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-5 mt-10 font-semibold text-sm">
+        {/* middle part for start here mobile */}
+        <div className="flex gap-5 mt-10 font-semibold text-sm">
           <div className="text-justify">
             <div className="flex lg:flex-row flex-col items-center justify-center gap-x-5">
               <div>
-                <p className="">
+                <p className="mx-3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Perspiciatis, ab. Hic aut error nostrum consequuntur facilis
                   praesentium, rem itaque. Cupiditate officia iure, qui magnam
@@ -40,11 +41,11 @@ const Bottom = () => {
                   aperiam eaque. Ad fuga nulla blanditiis quos aperiam.
                 </p>
                 {/* this part is for mobile responsive and will apear only on mobile */}
-                <div className="flex justify-center lg:hidden">
+                <div className="flex justify-center lg:hidden mx-3">
                   <div className="flex items-center">
                     <div className="">
                       <img
-                      
+
                         src="https://i.ibb.co/FzTVjpV/Image04.png"
                         alt=""
                         srcset=""
@@ -52,7 +53,7 @@ const Bottom = () => {
                     </div>
                     <div className="my-10 ml-7">
                       <img
-                      className="mb-5"
+                        className="mb-5"
                         src="https://i.ibb.co/KswhPJ8/Image03.png"
                         alt=""
                         srcset=""
@@ -65,22 +66,22 @@ const Bottom = () => {
                     </div>
                   </div>
                   <div className="mt-36 ml-7">
-                  <img
-                  className="mb-5"
-                    src="https://i.ibb.co/GTkSwBc/Image05.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <img
-                    src="https://i.ibb.co/cQcKfvb/Image01.png"
-                    alt=""
-                    srcset=""
-                  />
+                    <img
+                      className="mb-5"
+                      src="https://i.ibb.co/GTkSwBc/Image05.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <img
+                      src="https://i.ibb.co/cQcKfvb/Image01.png"
+                      alt=""
+                      srcset=""
+                    />
                   </div>
                 </div>
                 <div className="flex items-center gap-x-5">
                   <p className="my-2  hidden lg:block">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    sss Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Animi facilis vel doloremque quaerat delectus error tempore
                     at, accusantium id nesciunt sunt eaque dolores iste
                     blanditiis voluptatem odit qui? Molestias quo cum placeat
@@ -190,7 +191,7 @@ const Bottom = () => {
                 ipsum illum voluptate.
               </p>
             </div>
-            <p  className=" mt-5">
+            <p className="mx-3 mt-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
               consequatur delectus assumenda incidunt ad odio recusandae ullam.
               Veniam reprehenderit voluptatem ab fugiat, eligendi, perspiciatis,
@@ -205,6 +206,10 @@ const Bottom = () => {
             </p>
           </div>
         </div>
+        {/* middle part for end here mobile */}
+        {/* middle part start here for dekstop */}
+
+        {/* middle part for end here dekstop */}
       </div>
       <div>
         <ul className="w-40 ml-10 bg-base-100 hidden lg:block">

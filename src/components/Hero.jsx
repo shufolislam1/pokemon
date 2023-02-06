@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import InfoCards from "./InfoCards";
 import { useMediaQuery } from 'react-responsive';
-import Carousel from "./Carousel";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -14,9 +14,9 @@ const Hero = () => {
 
 
   const isLargeScreen = useMediaQuery({ minWidth: 768 });
-  useEffect(() => {
-    console.log(isLargeScreen);
-  },[isLargeScreen])
+  // useEffect(() => {
+  //   console.log(isLargeScreen);
+  // },[isLargeScreen])
 
   const [data, setData] = useState([]);
   const gqlQuery = `query pokemons($limit: Int) {
@@ -27,8 +27,6 @@ const Hero = () => {
           } 
         }
       }
-
-
       `;
   const gqlVariables = {
     limit: 10,
@@ -47,27 +45,29 @@ const Hero = () => {
   })
     .then((res) => res.json())
     .then((res) => setData(res?.data?.pokemons?.results));
-  // .then((res) => console.log(res));
+    // .then((res) => console.log(res));
 
 
 
   return (
-    <div
+    <div className=" bg-[url('https://i.ibb.co/fQBhJSb/Background.png')]"
       style={{
-        backgroundImage: `url(https://i.ibb.co/fQBhJSb/Background.png)`,
-        height: 1000,
-        width: 1800,
+        backgroundImage: "cover",
+        backgroundRepeat: "no-repeat"
       }}
     >
       <div className="flex justify-center">
         <img
-          style={{ marginTop: 50, marginLeft: 150 }}
+          // style={{ marginTop: 50, marginLeft: 150 }}
+          className="mt-4"
           src="https://i.ibb.co/sqX7Qc2/Logo.png"
           alt="pokemon"
           srcSet=""
         />
       </div>
-      <div className="lg:grid lg:grid-cols-5 lg:gap-10 lg:mt-10 lg:max-w-screen-2xl lg:mx-auto">
+      {
+        isLargeScreen && <Swiper>
+      <div className="grid grid-cols-5 gap-10 mt-10 max-w-screen-2xl lg:mx-auto">
         {data?.map((oneData, index) => (
           // <div className="col-span-1">
           // isLargeScreen?
@@ -77,8 +77,17 @@ const Hero = () => {
           // </div>
         ))}
       </div>
+        </Swiper>
+      }
       {
-        !isLargeScreen && <Swiper >
+        !isLargeScreen && <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={20}
+          breakpoints={{
+            0: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 }
+          }
+          }
+        >
           {data?.map((oneData, index) => (
             <SwiperSlide><InfoCards key={index} oneData={oneData}></InfoCards></SwiperSlide>
           ))}
