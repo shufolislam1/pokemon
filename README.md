@@ -1,4 +1,4 @@
-# pokemon
+# pokemon_Web_View
 A simple website where data loaded through GraphQL
 
 Used technologies are: 
