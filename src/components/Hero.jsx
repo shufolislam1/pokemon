@@ -52,8 +52,8 @@ const Hero = () => {
   return (
     <div className=" bg-[url('https://i.ibb.co/fQBhJSb/Background.png')]"
       style={{
-        backgroundImage: "cover",
-        backgroundRepeat: "no-repeat"
+        height:1000,
+        width:1800
       }}
     >
       <div className="flex justify-center">

@@ -13,7 +13,7 @@ function App() {
   //   className = 'width: 640px'
   // }
   return (
-    <div className='w-full'>
+    <div>
       <Hero></Hero>
       <Bottom></Bottom>
     </div>
