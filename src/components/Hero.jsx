@@ -11,12 +11,7 @@ import 'swiper/css';
 // ******In this component, data loaded via Graphql API and passed them through props to InfoCards compoennts. Beside, design part of Hero/top is in this component*********
 
 const Hero = () => {
-
-
   const isLargeScreen = useMediaQuery({ minWidth: 768 });
-  // useEffect(() => {
-  //   console.log(isLargeScreen);
-  // },[isLargeScreen])
 
   const [data, setData] = useState([]);
   const gqlQuery = `query pokemons($limit: Int) {
@@ -30,8 +25,6 @@ const Hero = () => {
       `;
   const gqlVariables = {
     limit: 10,
-    // id: "1",
-    // "name": "ditto"
   };
 
   fetch("https://graphql-pokeapi.graphcdn.app/", {
@@ -45,7 +38,6 @@ const Hero = () => {
   })
     .then((res) => res.json())
     .then((res) => setData(res?.data?.pokemons?.results));
-    // .then((res) => console.log(res));
 
 
 
@@ -58,7 +50,6 @@ const Hero = () => {
     >
       <div className="flex justify-center">
         <img
-          // style={{ marginTop: 50, marginLeft: 150 }}
           className="mt-4"
           src="https://i.ibb.co/sqX7Qc2/Logo.png"
           alt="pokemon"
@@ -69,12 +60,7 @@ const Hero = () => {
         isLargeScreen && <Swiper>
       <div className="grid grid-cols-5 gap-10 mt-10 max-w-screen-2xl lg:mx-auto">
         {data?.map((oneData, index) => (
-          // <div className="col-span-1">
-          // isLargeScreen?
-          // <InfoCards key={index} oneData={oneData}></InfoCards>
-          // :<Carousel key={index} oneData={oneData}></Carousel>
           <InfoCards key={index} oneData={oneData}></InfoCards>
-          // </div>
         ))}
       </div>
         </Swiper>
